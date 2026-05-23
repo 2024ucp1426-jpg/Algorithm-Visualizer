@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Algorithm Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Array Algorithm Visualizer</h1>
+<input type="number" id="arraySize" placeholder="Enter number of elements">
+
+<br><br>
+
+<label>
+<input type="radio" name="mode" value="manual" checked>
+Manual Input
+</label>
+
+<label>
+<input type="radio" name="mode" value="random">
+Random Array
+</label>
+
+<br><br>
+
+<input type="text" id="arrayValues" placeholder="Enter numbers separated by space">
+
+<br><br>
+
+<button onclick="generateArray()">Generate Array</button>
+<button onclick="bubbleSort()">Bubble Sort</button>
+<button onclick="selectionSort()">
+    Selection sort
+</button>
+<button onclick="insertionSort()">
+    Insertion sort
+</button>
+<button onclick="startMergeSort()">
+    Merge sort
+</button>
+<button onclick="startQuickSort()">
+    Quick sort
+</button>
+
+<div id="array-container"></div>
+<div id="iterationBox" style="display:none;">
+Pass Number: <span id="iterationCount">0</span>
+</div>
+
+<div id ="swapBox" style="display: none;"> Swaps <span id = "swapText"> 0</span></div>
+<div id ="minBox" style="display: none;"> Minimum element so far <span id = "minText"> -1</span></div>
+<script src="script.js"> </script>
+</body>
+</html>
