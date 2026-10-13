@@ -1,0 +1,29 @@
+body{
+
+    text-align:center;
+    font-family:Arial;
+
+}
+
+.container{
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:40px;
+
+}
+
+button{
+
+    width:180px;
+    height:70px;
+    font-size:20px;
+    cursor:pointer;
+    background-color: lightgreen;
+}
+
+button:hover{
+    background-color: darkgreen;
+    color: white;
+}

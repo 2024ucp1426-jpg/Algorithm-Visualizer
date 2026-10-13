@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="sorting.css">
+</head>
+
+<body>
+    <div id="bodyContainer" style="display: flex;">
+        <div id="leftPanel">
+            <h1 id="title"></h1>
+            <input type="number" id="arraySize" placeholder="Array Size (Positive Integer)">
+
+            <br><br>
+
+            <label>
+                <input type="radio" name="mode" value="manual" checked>
+                Manual
+            </label>
+
+            <label>
+                <input type="radio" name="mode" value="random">
+                Random
+            </label>
+
+            <br><br>
+            <input type="text" id="arrayValues" placeholder="Enter Elements">
+            <br><br>
+
+            <button onclick="generateArray()" id="generateButton">
+                Generate
+            </button>
+
+            <button id="startButton">
+                Start
+            </button>
+
+            <br>
+            <br>
+
+            <div id="array-wrapper">
+                <div id="array-container"></div>
+                <div id="pointer0" class="pointer"></div>
+                <div id="pointer1" class="pointer">↑<br>i</div>
+                <div id="pointer2" class="pointer">↑<br>j</div>
+                <div id="tempArrays" style="display:none;">
+
+                    <div id="tempContainer">
+                        <div class="tempSection">
+                            <h3 id="leftTitle"></h3>
+                            <div id="leftArray" class="tempArray"></div>
+                        </div>
+                        <div class="tempSection">
+                            <h3 id="rightTitle"></h3>
+                            <div id="rightArray" class="tempArray"></div>
+                        </div>
+                    </div>
+                    <div id="pointerI" class="pointer"></div>
+                    <div id="pointerJ" class="pointer"></div>
+                </div>
+                <div id="mergeTree"></div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="iterationBox" style="display:none;">
+                Pass
+                <span id="iterationCount">0</span>
+            </div>
+
+            <br>
+            <br>
+
+            <div id="swapBox" style="display:none;">
+                Swaps
+                <span id="swapText">0</span>
+            </div>
+
+            <div id="iterationBox">
+                <span id="iterationCount"></span>
+            </div>
+            <div id="minBox" style="display: none;">
+                Minimum Element
+                <span id="minText"> </span>
+            </div>
+
+            <br>
+            <br>
+
+            <a href="../pages/array.html">
+                <button>
+                    Back
+                </button>
+            </a>
+        </div>
+        <div id="codeContainer" style="text-align: left; margin-left: 5em; margin-top: 5em;">
+
+        </div>
+    </div>
+
+
+    <script src="../js/script.js"></script>
+    <script src="../js/navigation.js"></script>
+
+</body>
+
+</html>

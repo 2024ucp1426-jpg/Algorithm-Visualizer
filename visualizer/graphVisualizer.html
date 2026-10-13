@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Algorithm Visualizer</title>
+
+    <link rel="stylesheet" href="../css/graphVisualizer.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1 id="algorithmTitle"></h1>
+    </header>
+
+    <!-- Controls -->
+    <section class="controls">
+
+        <button id="startBtn">▶ Start</button>
+
+        <button id="pauseBtn">⏸ Pause</button>
+
+        <button id="restartBtn">↺ Restart</button>
+
+    </section>
+
+    <!-- Main Layout -->
+    <main class="main-container">
+
+        <!-- LEFT PANEL -->
+        <section class="left-panel">
+
+            <div class="graph-container">
+
+                <canvas id="graphCanvas" width="850" height="550">
+                </canvas>
+
+            </div>
+
+            <div class="box">
+
+                <h2 id="distanceTitle">Distance</h2>
+
+                <div id="distanceContainer">
+
+                </div>
+
+            </div>
+
+            <div class="box">
+
+                <h2>Iteration</h2>
+
+                <div id="iterationBox">
+
+                    0
+
+                </div>
+
+            </div>
+            <div class="info-container">
+
+                <!-- Queue / Stack / Priority Queue -->
+                <div class="box">
+
+                    <h2 id="structureTitle"></h2>
+
+                    <div id="structureContainer">
+
+                    </div>
+
+                </div>
+
+                <!-- Visited -->
+
+                <div class="box">
+
+                    <h2>Visited</h2>
+
+                    <div id="visitedContainer">
+
+                    </div>
+
+                </div>
+
+                <!-- Current Node -->
+
+                <div class="box">
+
+                    <h2>Current Node</h2>
+
+                    <div id="currentNode">-</div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- RIGHT PANEL -->
+
+        <aside class="right-panel">
+
+            <h2>Pseudocode</h2>
+
+            <div id="pseudoCode">
+
+            </div>
+
+        </aside>
+
+    </main>
+
+    <script src="../js/graphData.js"></script>
+
+    <script src="../js/canvasGraph.js"></script>
+    <script src="../js/visualizerUtil.js"></script>
+    <script src="../js/bfs.js"></script>
+
+    <script src="../js/dfs.js"></script>
+
+    <script src="../js/dijkstra.js"></script>
+
+    <script src="../js/bellmanFord.js"></script>
+
+    <script src="../js/kruskal.js"></script>
+
+    <script src="../js/navigationGraph.js"></script>
+
+</body>
+
+</html>

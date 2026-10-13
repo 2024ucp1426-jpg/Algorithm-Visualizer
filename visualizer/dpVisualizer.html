@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dynamic Programming Visualizer</title>
+    <link rel="stylesheet" href="dpVisualizer.css">
+</head>
+
+<body>
+    <div id="bodyContainer" style="display:flex;">
+        <!-- Left Panel -->
+        <div>
+            <h1 id="title"></h1>
+            <!-- Input Section -->
+            <div id="inputContainer">
+            </div>
+            <br>
+            <button id="startButton">
+                Start
+            </button>
+            <button id="resetButton">
+                Reset
+            </button>
+
+            <br><br>
+            <!-- Current State -->
+            <div id="stateBox">
+                <b>Current State</b>
+                <br>
+                <span id="stateText"></span>
+            </div>
+
+            <br>
+            <!-- DP Table -->
+            <div id="tableWrapper">
+                <div id="pointerI" class="pointer">→<br>i</div>
+
+                <div id="pointerJ" class="pointer">↓<br>j</div>
+                <table id="dpTable">
+                </table>
+            </div>
+
+            <br>
+            <!-- Explanation -->
+            <div id="explanationBox">
+                <b>Explanation</b>
+                <br><br>
+                <span id="explanationText"></span>
+            </div>
+            <br>
+            <!-- Result -->
+            <div id="answerBox">
+                <b>Answer</b>
+                <br>
+                <span id="answerText"></span>
+            </div>
+            <br>
+            <a href="../pages/dp.html">
+                <button>
+                    Back
+                </button>
+            </a>
+        </div>
+        <!-- Right Panel -->
+        <div id="codeContainer" style="margin-left:60px;
+                    margin-top:40px;
+                    text-align:left;">
+        </div>
+    </div>
+    <script src="../js/dp.js"></script>
+    <script src="../js/knapsack.js"></script>
+    <script src="../js/navigationDP.js"></script>
+
+</body>
+
+</html>
